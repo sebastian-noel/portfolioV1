@@ -19,18 +19,25 @@ export default function ProjectCard({ project, onLearnMore }: ProjectCardProps) 
   return (
     <article 
       onClick={onLearnMore}
-      className="group relative flex h-full flex-col gap-4 rounded-3xl border p-6 shadow-sm cursor-pointer transition-all duration-200 hover:scale-105 hover:shadow-lg"
+      className="group relative flex h-full flex-col gap-4 rounded-3xl border p-6 shadow-sm cursor-pointer transition-all duration-500 hover:-translate-y-1 hover:scale-[1.01]"
       style={{
         backgroundColor: `${secondary}26`,
         borderColor: techBg,
+        boxShadow: '0 1px 2px 0 rgb(0 0 0 / 0.05)',
       }}
-      onMouseEnter={(e) => e.currentTarget.style.borderColor = primary}
-      onMouseLeave={(e) => e.currentTarget.style.borderColor = techBg}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.borderColor = primary;
+        e.currentTarget.style.boxShadow = `0 25px 50px -12px ${primary}33`;
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.borderColor = techBg;
+        e.currentTarget.style.boxShadow = '0 1px 2px 0 rgb(0 0 0 / 0.05)';
+      }}
       >
       {award && (
         <div className="absolute top-4 left-1/2 -translate-x-1/2 z-10">
           <span 
-            className="inline-flex items-center gap-1 rounded-full px-3 py-1.5 text-xs font-bold uppercase tracking-wide shadow-lg transition-transform duration-200 group-hover:scale-110 group-hover:rotate-3"
+            className="inline-flex items-center gap-1 rounded-full px-3 py-1.5 text-xs font-bold uppercase tracking-wide shadow-lg transition-transform duration-400 group-hover:scale-110 group-hover:rotate-3"
             style={{ backgroundColor: primary, color: '#0a0a0a' }}
           >
             🏆 {award}

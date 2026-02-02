@@ -8,9 +8,10 @@ import { type Experience } from '@/types';
 
 interface ExperienceCardProps {
   experience: Experience;
+  index?: number;
 }
 
-export default function ExperienceCard({ experience }: ExperienceCardProps) {
+export default function ExperienceCard({ experience, index = 0 }: ExperienceCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -46,7 +47,17 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
   };
 
   return (
-    <div className="relative pb-10 last:pb-0">
+    <motion.div 
+      className="relative pb-10 last:pb-0"
+      initial={index === 0 ? { opacity: 1, y: 0 } : { opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{ 
+        duration: index === 0 ? 0 : 0.8,
+        delay: index === 0 ? 0 : (index - 1) * 0.15,
+        ease: [0.25, 0.46, 0.45, 0.94]
+      }}
+    >
       {/* Timeline - positioned absolutely on the left */}
       <div className="hidden md:flex absolute -left-[31px] top-0 items-start gap-2">
         {/* Date */}
@@ -260,6 +271,6 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
           )}
         </AnimatePresence>
       </div>
-    </div>
+    </motion.div>
   );
 }

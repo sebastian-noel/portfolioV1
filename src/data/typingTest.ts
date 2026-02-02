@@ -9,7 +9,7 @@ export const typingTestConfig = {
     "my favorite hackathon project i worked on was tidesense where i worked with stevin, nicole, and chris",
     "i am one of the founding officers of graphics programming knights and currently serve as the secretary",
     "i am a member of both the society of hispanic professional engineers, also known as shpe, and colorstack",
-    "java was the first programming language i learned and still use it today for coursework like computer science ii",
+    "java was the first programming language i learned and one i still use today for my internship at bny and coursework",
     "my first hackathon win was at shell hacks 2025 where my team and i built next step for insurance education",
     "the five hackathons i have attended are knight hacks vii, gemiknights, shellhacks, knight hacks viii, and sharkbyte", 
     "i dual boot my computer with windows 11 pro for gaming and kubuntu for software development",

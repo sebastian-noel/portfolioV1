@@ -53,6 +53,37 @@ export const experiences: Experience[] = [
     },
   },
   {
+    company: "Knight Hacks",
+    role: "Outreach Team",
+    start: "February 2026",
+    end: "Present",
+    location: "Orlando, FL",
+    description:
+      "Outreach team at UCF's premier hackathon organization, promoting in workshops, hackathons, and mentorship programs.",
+    achievements: [
+      "Operation Meetings (Fall 2025)",
+      "Kickstart Mentorship (Fall 2025)",
+      "Knight Hacks VIII (Oct 2025)",
+      "GemiKnights (Jun 2025)",
+      "Project Launch (Spring 2025)",
+      "Knight Hacks VII (October 2024)",
+      "Workshops (Fall 2024 - Present)",
+    ],
+    technologies: ["React", "TypeScript", "Python", "Hackathons"],
+    logo: "/images/experience/kh-logo.svg",
+    links: [
+      { label: "Club Website", url: "https://club.knighthacks.org/" },
+    ],
+    media: [
+      { type: "image", src: "/images/experience/kh-kickstart.jpg", alt: "Knight Hacks Kickstart Mentorship" }
+    ],
+    colorScheme: {
+      primary: "#ffe90d",
+      secondary: "#862a5f",
+      techBg: "#ffe90d26", // Primary w/ 15% opacity
+    },
+  },
+  {
     company: "Graphics Programming Knights",
     role: "Co-founder & Secretary",
     start: "July 2025",
@@ -108,37 +139,6 @@ export const experiences: Experience[] = [
       primary: "#F9C710",
       secondary: "#1A1A1A",
       techBg: "#F9C71026", // Primary w/ 15% opacity
-    },
-  },
-  {
-    company: "Knight Hacks",
-    role: "Mentee",
-    start: "September 2024",
-    end: "Present",
-    location: "Orlando, FL",
-    description:
-      "Active member and mentee at UCF's premier hackathon organization, participating in workshops, hackathons, and mentorship programs.",
-    achievements: [
-      "Operation Meetings (Fall 2025)",
-      "Kickstart Mentorship (Fall 2025)",
-      "Knight Hacks VIII (Oct 2025)",
-      "GemiKnights (Jun 2025)",
-      "Project Launch (Spring 2025)",
-      "Knight Hacks VII (October 2024)",
-      "Workshops (Fall 2024 - Present)",
-    ],
-    technologies: ["React", "TypeScript", "Python", "Hackathons"],
-    logo: "/images/experience/kh-logo.png",
-    links: [
-      { label: "Club Website", url: "https://club.knighthacks.org/" },
-    ],
-    media: [
-      { type: "image", src: "/images/experience/kh-kickstart.jpg", alt: "Knight Hacks Kickstart Mentorship" }
-    ],
-    colorScheme: {
-      primary: "#9665CC",
-      secondary: "#151934",
-      techBg: "#9665CC26", // Primary w/ 15% opacity
     },
   },
 ];

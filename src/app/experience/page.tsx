@@ -21,7 +21,7 @@ export default function ExperiencePage() {
           <div className="hidden md:block absolute left-24 top-2 bottom-0 w-0.5 bg-white/40" />
           
           {experiences.map((experience, idx) => (
-            <ExperienceCard key={`${experience.company}-${idx}`} experience={experience} />
+            <ExperienceCard key={`${experience.company}-${idx}`} experience={experience} index={idx} />
           ))}
         </div>
       </div>
