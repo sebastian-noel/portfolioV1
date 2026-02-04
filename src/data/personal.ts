@@ -50,6 +50,12 @@ export const heroContent: HeroContent = {
       alt: "Knight Hacks VIII hackathon team photo",
       description: "Team photo at KnightHacks VIII while developing Alto.",
     },
+    {
+      type: "image",
+      src: "/images/carousel/ouckah.jpg",
+      alt: "Photo with Aidan Ouckama",
+      description: "Photo with Aidan Ouckama, known online as Ouckah!",
+    },
   ],
   hobbies: [
     {
