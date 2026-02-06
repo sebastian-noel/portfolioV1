@@ -8,11 +8,11 @@ export const experiences: Experience[] = [
     end: "Present",
     location: "Orlando, FL",
     description:
-      "Spring 2026 Software Engineer Intern at BNY's Client Technology and Operations Center.",
+      "Developing an Infrastructure Digital Engineer, an AI agent based system tailored to automate monitoring, issue detection, and resolution for financial microservices. Engineering the solution using Java, Spring Boot, and PostgreSQL within a Dockerized architecture, while integrating Prometheus, Grafana, and AppDynamics for full-stack observability.",
     achievements: [
       "Working on semester long app development project with Kai Sprunger, Carlos Catala, and Nicole Bustos",
     ],
-    technologies: ["App Development", "Agile", "AI", "ML"],
+    technologies: ["Java", "Springboot", "Docker", "PostgreSQL", "Prometheus", "Grafana", "AppDynamics", "GitLab", "Agile", "Jira"],
     logo: "/images/experience/bny-logo.png",
     links: [
       { label: "Company Website", url: "https://www.bny.com/corporate/global/" },
