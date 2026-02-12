@@ -9,15 +9,15 @@ export default function About() {
 
         <div className="space-y-6 text-lg leading-relaxed text-(--color-text)/85">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="https://www.bny.com/corporate/global/en.html" className="text-accent underline decoration-accent underline-offset-2 focus:outline-none focus:ring-2 focus:ring-accent">BNY</a> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Hey, I&apos;m Sebastian 👋! I&apos;m majoring in Computer Science with a minor in Intelligent Robotic Systems at the <a href="https://www.ucf.edu/" target="_blank" rel="noopener noreferrer" className="relative text-accent font-semibold after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-500 hover:after:w-full">University of Central Florida</a> and looking for Summer 2026 internship opportunities to build upon my professional experience!
           </p>
           
           <p>
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            I&apos;m currently a Software Engineer Intern at <a href="https://www.bny.com/" target="_blank" rel="noopener noreferrer" className="relative text-accent font-semibold after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-500 hover:after:w-full">BNY</a>, Computer Vision Researcher at <a href="https://www.crcv.ucf.edu/" target="_blank" rel="noopener noreferrer" className="relative text-accent font-semibold after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-500 hover:after:w-full">CRCV</a>, Secretary & Software Engineer at <a href="https://knightconnect.campuslabs.com/engage/organization/graphicsprogrammingknights" target="_blank" rel="noopener noreferrer" className="relative text-accent font-semibold after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-500 hover:after:w-full">Graphics Programming Knights</a>, and an Outreach Board Member for <a href="https://club.knighthacks.org/" target="_blank" rel="noopener noreferrer" className="relative text-accent font-semibold after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-500 hover:after:w-full">Knight Hacks</a>!
           </p>
           
-          <p>Program
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+          <p>
+            I hope to improve my software engineering proficiency, explore potential opportunities, and connect with like-minded professionals to further my growth!
           </p>
         </div>
       </div>

@@ -2,7 +2,7 @@ import { type Experience } from "@/types";
 
 export const experiences: Experience[] = [
   {
-    company: "Bank of New York Mellon (BNY)",
+    company: "BNY (Bank of New York Mellon)",
     role: "Software Engineer Intern",
     start: "January 2026",
     end: "Present",
@@ -12,7 +12,7 @@ export const experiences: Experience[] = [
     achievements: [
       "Working on semester long app development project with Kai Sprunger, Carlos Catala, and Nicole Bustos",
     ],
-    technologies: ["Java", "Springboot", "Docker", "PostgreSQL", "Prometheus", "Grafana", "AppDynamics", "GitLab", "Agile", "Jira"],
+    technologies: ["Java", "Spring Boot", "PostgreSQL", "Docker", "Prometheus", "Grafana", "AppDynamics", "GitLab", "Agile", "Jira"],
     logo: "/images/experience/bny-logo.png",
     links: [
       { label: "Company Website", url: "https://www.bny.com/corporate/global/" },
@@ -34,11 +34,11 @@ export const experiences: Experience[] = [
     end: "Present",
     location: "Orlando, FL",
     description:
-      "Spring 2026 Undergraduate Computer Vision Researcher under Dr. Yogesh S Rawat, focusing on video understanding and action recognition.",
+      "Working with the Meta Superintelligence Lab's SAM 3 computer vision model to build a novel dynamic memory buffer for long-term video understanding.",
     achievements: [
       "Spring 2026 Undergraduate Computer Vision Researcher under Dr. Yogesh S Rawat",
     ],
-    technologies: ["Python", "PyTorch", "Computer Vision", "Deep Learning"],
+    technologies: ["Python", "PyTorch", "SAM 3", "COCO", "Anaconda", "Bash", "HPC", "Technical Writing", "Video Segmentation", "Dynamic Memory",],
     logo: "/images/experience/crcv-logo.jpg",
     links: [
       { label: "Company Website", url: "https://www.crcv.ucf.edu/" },
@@ -54,7 +54,7 @@ export const experiences: Experience[] = [
   },
   {
     company: "Knight Hacks",
-    role: "Outreach Team",
+    role: "Outreach Board Member",
     start: "February 2026",
     end: "Present",
     location: "Orlando, FL",
@@ -69,7 +69,7 @@ export const experiences: Experience[] = [
       "Knight Hacks VII (October 2024)",
       "Workshops (Fall 2024 - Present)",
     ],
-    technologies: ["React", "TypeScript", "Python", "Hackathons"],
+    technologies: ["Community", "Public Speaking", "Event Planning", "Social Media", "Content Creation", "Content Capturing", "Hackathons"],
     logo: "/images/experience/kh-logo.svg",
     links: [
       { label: "Club Website", url: "https://club.knighthacks.org/" },
@@ -85,7 +85,7 @@ export const experiences: Experience[] = [
   },
   {
     company: "Graphics Programming Knights",
-    role: "Co-founder & Secretary",
+    role: "Co-founder / Secretary / Software Engineer",
     start: "July 2025",
     end: "Present",
     location: "Orlando, FL",
@@ -127,7 +127,7 @@ export const experiences: Experience[] = [
       "Engineered an image processing pipeline using Marimo notebooks, reducing data processing time by 25%",
       "Architected a foundational Python package by refactoring 14 scripts to accelerate future research and development",
     ],
-    technologies: ["Python", "PyTorch", "LSTM", "MLP", "Marimo", "NumPy", "Pandas"],
+    technologies: ["Python", "NumPy", "Pandas", "PyTorch", "Marimo Notebook", "LSTM", "MLP", "Deep Learning", "Computer Vision"],
     logo: "/images/experience/dpv-logo.png",
     links: [
       { label: "Research Program", url: "https://ucf-dpv.notion.site/DARTS-2025-2498d52e715180b18c7fd1065e655faf?p=2498d52e7151801d89c8f4d5ea1a9ac7&pm=c" },

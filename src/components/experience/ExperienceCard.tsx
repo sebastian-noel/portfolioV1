@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { ChevronLeft, ChevronRight, ChevronDown, ChevronUp, MapPin, ExternalLink } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { type Experience } from '@/types';
@@ -13,7 +13,9 @@ interface ExperienceCardProps {
 
 export default function ExperienceCard({ experience, index = 0 }: ExperienceCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [isManualOverride, setIsManualOverride] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const hoverTimerRef = useRef<number | null>(null);
 
   const {
     company,
@@ -45,6 +47,17 @@ export default function ExperienceCard({ experience, index = 0 }: ExperienceCard
   const prevImage = () => {
     setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
   };
+
+  const clearHoverTimer = () => {
+    if (hoverTimerRef.current !== null) {
+      window.clearTimeout(hoverTimerRef.current);
+      hoverTimerRef.current = null;
+    }
+  };
+
+  useEffect(() => {
+    return () => clearHoverTimer();
+  }, []);
 
   return (
     <motion.div 
@@ -97,10 +110,22 @@ export default function ExperienceCard({ experience, index = 0 }: ExperienceCard
         onMouseEnter={(e) => {
           e.currentTarget.style.borderColor = primary;
           e.currentTarget.style.boxShadow = `0 25px 50px -12px ${primary}33`;
+          if (isManualOverride) {
+            return;
+          }
+          clearHoverTimer();
+          hoverTimerRef.current = window.setTimeout(() => {
+            setIsExpanded(true);
+          }, 1500);
         }}
         onMouseLeave={(e) => {
           e.currentTarget.style.borderColor = techBg;
           e.currentTarget.style.boxShadow = '0 1px 2px 0 rgb(0 0 0 / 0.05)';
+          if (isManualOverride) {
+            return;
+          }
+          clearHoverTimer();
+          setIsExpanded(false);
         }}
       >
         {/* Logo - absolute positioned in top right */}
@@ -204,7 +229,11 @@ export default function ExperienceCard({ experience, index = 0 }: ExperienceCard
         {/* Expand/Collapse button */}
         <button
           type="button"
-          onClick={() => setIsExpanded(!isExpanded)}
+          onClick={() => {
+            clearHoverTimer();
+            setIsManualOverride(true);
+            setIsExpanded((prev) => !prev);
+          }}
           className="inline-flex items-center gap-1 text-sm font-medium hover:underline"
           style={{ color: primary }}
         >
@@ -226,14 +255,14 @@ export default function ExperienceCard({ experience, index = 0 }: ExperienceCard
                 {/* Achievements */}
                 {achievements.length > 0 && (
                   <div>
-                    <h4 className="text-sm font-semibold text-foreground mb-3">
+                    <h4 className="text-base md:text-lg font-semibold text-foreground mb-3">
                       Key Achievements
                     </h4>
                     <ul className="space-y-2">
                       {achievements.map((achievement, idx) => (
                         <li
                           key={idx}
-                          className="flex items-start gap-2 text-sm text-(--color-text)/80"
+                          className="flex items-start gap-2 text-base md:text-md text-(--color-text)/80"
                         >
                           <span className="mt-1.5 w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: primary }} />
                           <span>{achievement}</span>
@@ -246,7 +275,7 @@ export default function ExperienceCard({ experience, index = 0 }: ExperienceCard
                 {/* Links & Resources */}
                 {links && links.length > 0 && (
                   <div>
-                    <h4 className="text-sm font-semibold text-foreground mb-3">
+                    <h4 className="text-base md:text-lg font-semibold text-foreground mb-3">
                       Links & Resources
                     </h4>
                     <div className="flex flex-wrap gap-4">
@@ -256,7 +285,7 @@ export default function ExperienceCard({ experience, index = 0 }: ExperienceCard
                           href={link.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 text-sm font-medium hover:underline"
+                          className="inline-flex items-center gap-1.5 text-base md:text-md font-medium hover:underline"
                           style={{ color: primary }}
                         >
                           <ExternalLink className="h-3.5 w-3.5" />
