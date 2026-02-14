@@ -13,5 +13,6 @@ export const typingTestConfig = {
     "my first hackathon win was at shell hacks 2025 where my team and i built next step for insurance education",
     "the five hackathons i have attended are knight hacks vii, gemiknights, shellhacks, knight hacks viii, and sharkbyte", 
     "i dual boot my computer with windows 11 pro for gaming and kubuntu for software development",
+    "i joined the outreach team for knight hacks in early 2026 to help promote the hackathon, workshops, and social events",
     ],
 };
