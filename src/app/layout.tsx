@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import ClickSpark from "@/components/ClickSpark";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -20,19 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} ${inter.variable}`}>
-        <ClickSpark
-          sparkColor='#fff'
-          sparkSize={10}
-          sparkRadius={18}
-          sparkCount={8}
-          duration={350}
-        >
-          <Navbar />
-          <main className="min-h-screen pt-12">
-            {children}
-          </main>
-          <Footer />
-        </ClickSpark>
+        <Navbar />
+        <main className="min-h-screen pt-12">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
