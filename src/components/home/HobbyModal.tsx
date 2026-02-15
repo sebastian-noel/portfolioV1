@@ -101,21 +101,35 @@ export default function HobbyModal({ hobby, isOpen, onClose }: HobbyModalProps) 
                     <h3 className="text-xl font-semibold text-primary">
                       {section.title}
                     </h3>
-                    <div className="space-y-2">
+                    {section.description && (
+                      <p className="text-lg text-foreground/70 leading-relaxed">
+                        {section.description}
+                      </p>
+                    )}
+                    {section.media && section.media.length > 0 && (
+                      <div className="relative aspect-video w-full overflow-hidden rounded-2xl bg-background/60">
+                        <Image
+                          src={section.media[0].src}
+                          alt={section.media[0].alt}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 1024px) 100vw, 768px"
+                        />
+                      </div>
+                    )}
+                    <div className="grid gap-3 md:grid-cols-2">
                       {section.items.map((item) => (
                         <div
                           key={item.name}
                           className="flex items-start justify-between gap-4 rounded-xl bg-secondary/20 p-4"
                         >
                           <div className="flex-1">
-                            <p className="font-medium text-foreground">
+                            <p className="text-sm font-medium uppercase tracking-wide text-foreground/60">
                               {item.name}
                             </p>
-                            {item.description && (
-                              <p className="mt-1 text-sm text-foreground/70">
-                                {item.description}
-                              </p>
-                            )}
+                            <p className="mt-1 text-base font-semibold text-foreground">
+                              {item.description ?? item.name}
+                            </p>
                           </div>
                           {item.link && (
                             <a

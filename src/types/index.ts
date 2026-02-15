@@ -76,6 +76,8 @@ export interface Experience {
 
 export interface HobbySection {
   title: string;
+  description?: string;
+  media?: MediaItem[];
   items: {
     name: string;
     description?: string;

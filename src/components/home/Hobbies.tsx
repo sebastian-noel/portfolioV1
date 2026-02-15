@@ -16,8 +16,8 @@ export default function Hobbies() {
     <section className="bg-background py-10 text-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <div className="space-y-2">
-          <h2 className="text-2xl font-semibold">Beyond code</h2>
-          <p className="text-(--color-text)/75">Things that keep me curious and balanced.</p>
+          <h2 className="text-2xl font-semibold">Beyond the code</h2>
+          <p className="text-(--color-text)/75">A few of my favorite hobbies and interests that.</p>
         </div>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">

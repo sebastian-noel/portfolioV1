@@ -68,13 +68,17 @@ export const heroContent: HeroContent = {
         sections: [
           {
             title: "Computer Specs",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            media: [
+              { type: "image", src: "/images/hobbies/placeholder.png", alt: "Full PC build placeholder" },
+            ],
             items: [
               { name: "GPU", description: "Gigabyte NVIDIA GeForce RTX 5070 Ti AERO OC 16GB", link: "https://www.gigabyte.com/Graphics-Card/GV-N507TAERO-OC-16GD" },
               { name: "CPU", description: "AMD Ryzen 7 7800X3D 8-Core 16-Thread", link: "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7800x3d.html" },
               { name: "RAM", description: "Team T-Force Delta RGB 32GB (2 x 16GB) DDR5 6000 CL30", link: "https://www.teamgroupinc.com/en/product-detail/memory/T-FORCE/delta-rgb-ddr5-white/delta-rgb-ddr5-white-FF4D532G6000HC30DC01/" },
               { name: "Motherboard", description: "B650E AORUS ELITE X AX ICE", link: "https://www.gigabyte.com/Motherboard/B650E-AORUS-ELITE-X-AX-ICE-rev-10-11" },
-              { name: "Storage 1", description: "WD Black SN850X 2TB NVMe SSD (Windows 11 Pro, for gaming)", link: "https://shop.sandisk.com/products/ssd/internal-ssd/wd-black-sn850x-nvme-ssd?sku=WDS200T2X0E-00BCA0" },
-              { name: "Storage 2", description: "WD Blue SN5000 1TB NVMe SSD (Kubuntu, for software development)", link: "https://shop.sandisk.com/products/ssd/internal-ssd/wd-blue-sn5000-nvme-ssd?sku=WDS100T4B0E-00CNZ0" },
+              { name: "Storage 1", description: "WD Black SN850X 2TB NVMe SSD (OS: Windows 11 Pro)", link: "https://shop.sandisk.com/products/ssd/internal-ssd/wd-black-sn850x-nvme-ssd?sku=WDS200T2X0E-00BCA0" },
+              { name: "Storage 2", description: "WD Blue SN5000 1TB NVMe SSD (OS: Kubuntu)", link: "https://shop.sandisk.com/products/ssd/internal-ssd/wd-blue-sn5000-nvme-ssd?sku=WDS100T4B0E-00CNZ0" },
               { name: "Power Supply", description: "Lian Li EDGE Gold 1000W 80+ Gold Fully Modular", link:"https://lian-li.com/product/edge-gold/" },
               { name: "Case", description: "Lian Li O11 Dynamic Evo RGB", link: "https://lian-li.com/product/o11d-evo-rgb/" },
               { name: "CPU Cooler", description: "Phanteks Glacier One 360M25 G2", link: "https://phanteks.com/product/glacier-one-360m25g2-white/" },
@@ -83,20 +87,23 @@ export const heroContent: HeroContent = {
           },
           {
             title: "Monitor",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             items: [
               { name: "Primary Monitor", description: "LG 27GX700A-B 27", link: "https://www.lg.com/us/monitors/lg-27gx700a-b-gaming-monitor" },
             ],
           },
           {
             title: "Keyboard",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             items: [
+              { name: "Keyboard", description: "Monsgeek M1 V5 Via Rapid Disassembly", link: "https://www.monsgeek.com/product/m1-v5-via-rapid-disassembly/" },
               { name: "Switches", description: "Akko Rosewood", link: "https://en.akkogear.com/product/akko-rosewood-switch/" },
               { name: "Keycaps", description: "Keychron Double Shot PBT OSA Keycaps", link: "https://www.keychron.com/products/double-shot-pbt-osa-full-set-keycap-set?variant=40561987387481" },
-              { name: "Keyboard", description: "Monsgeek M1 V5 Via Rapid Disassembly", link: "https://www.monsgeek.com/product/m1-v5-via-rapid-disassembly/" },
             ],
           },
           {
             title: "Mouse",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             items: [
               { name: "Mouse", description: "Razer Viper V3 Pro", link: "https://www.razer.com/gaming-mice/razer-viper-v3-pro" },
             ],
@@ -109,6 +116,20 @@ export const heroContent: HeroContent = {
       description: "Placeholder description about gaming",
       media: [
         { type: "image", src: "/images/hobbies/placeholder.png", alt: "Placeholder image" },
+      ],
+    },
+    {
+      title: "Anime & Manga",
+      description: "Placeholder description about favorite series, genres, and art styles.",
+      media: [
+        { type: "image", src: "/images/hobbies/placeholder.png", alt: "Anime and manga collage placeholder" },
+      ],
+    },
+    {
+      title: "Astronomy",
+      description: "Placeholder description about stargazing, astrophotography, or space missions.",
+      media: [
+        { type: "image", src: "/images/hobbies/placeholder.png", alt: "Night sky placeholder" },
       ],
     },
   ],
