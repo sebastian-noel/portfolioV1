@@ -14,7 +14,8 @@
   --color-primary: var(--color-primary);
   --color-secondary: var(--color-secondary);
   --color-accent: var(--color-accent);
-  --font-sans: var(--font-inter, system-ui, -apple-system, "Segoe UI", sans-serif);
+  --font-sans: var(--font-rubik, system-ui, -apple-system, "Segoe UI", sans-serif);
+  --font-mono: var(--font-fragment-mono, ui-monospace, "Cascadia Code", monospace);
 }
 
 body {

@@ -1,10 +1,21 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Rubik, Fragment_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const rubik = Rubik({ 
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-rubik" 
+});
+
+const fragmentMono = Fragment_Mono({ 
+  subsets: ["latin"], 
+  weight: ["400"],
+  style: ["normal", "italic"],
+  variable: "--font-fragment-mono" 
+});
 
 export const metadata: Metadata = {
   title: "Sebastian Noel | Portfolio",
@@ -18,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${inter.variable}`}>
+      <body className={`${rubik.className} ${rubik.variable} ${fragmentMono.variable}`}>
         <Navbar />
         <main className="min-h-screen pt-12">
           {children}
