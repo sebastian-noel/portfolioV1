@@ -71,7 +71,7 @@ export default function ProjectCard({ project, onLearnMore }: ProjectCardProps) 
       <div className="flex flex-1 flex-col gap-3">
         {purpose && (
           <span 
-            className="text-xs font-semibold uppercase tracking-wide"
+            className="text-xs font-semibold uppercase tracking-wide text-center"
             style={{ color: primary }}
           >
             {purpose}

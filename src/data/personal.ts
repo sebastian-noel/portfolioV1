@@ -2,7 +2,7 @@ import { type HeroContent } from "@/types";
 
 export const heroContent: HeroContent = {
   name: "Sebastian Noel",
-  title: "Software Engineer, Researcher, & Leader",
+  title: "Software Engineer, Researcher, Leader",
   blurb:
     "Computer Science @ University of Central Florida",
   location: "Orlando, Florida",

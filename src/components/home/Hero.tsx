@@ -71,7 +71,7 @@ export default function Hero() {
 
           <div className="hidden md:flex items-center gap-2 text-(--color-text)/70 justify-start">
             <MapPin className="h-4 w-4 text-accent" />
-            <span>{location}</span>
+            <span className="text-lg">{location}</span>
           </div>
           {/* (mobile) About section begins after this block */}
         </div>

@@ -7,7 +7,7 @@ export default function About() {
           <div className="h-1 w-20 bg-accent rounded-full"></div>
         </div>
 
-        <div className="space-y-6 text-lg leading-relaxed text-(--color-text)/85">
+        <div className="space-y-6 text-md sm:text-xl leading-relaxed text-(--color-text)/85">
           <p>
             Hey, I&apos;m Sebastian 👋! I&apos;m majoring in Computer Science with a minor in Intelligent Robotic Systems at the <a href="https://www.ucf.edu/" target="_blank" rel="noopener noreferrer" className="relative text-accent font-semibold after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">University of Central Florida</a> and looking for Summer 2026 internship opportunities to build upon my professional experience!
           </p>

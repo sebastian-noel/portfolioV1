@@ -10,7 +10,7 @@ export default function Footer() {
 
   return (
     <footer className="relative bg-background/50 backdrop-blur-sm border-t border-white/10 overflow-visible shadow-[0_-8px_16px_rgba(255,255,255,0.09)]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-5">
         <div className="flex flex-col items-center justify-center gap-4">
           {/* Scroll to Top Button */}
           <button
