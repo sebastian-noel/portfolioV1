@@ -69,7 +69,7 @@ export default function Hero() {
             })}
           </div>
 
-          <div className="hidden md:flex items-center gap-2 text-(--color-text)/70 justify-start">
+          <div className="hidden md:flex items-center gap-2 text-(--color-text)/80 justify-start">
             <MapPin className="h-4 w-4 text-accent" />
             <span className="text-lg">{location}</span>
           </div>
