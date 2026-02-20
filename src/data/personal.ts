@@ -135,53 +135,56 @@ export const heroContent: HeroContent = {
   ],
   skills: [
     // Programming Languages
-    { name: "Python", icon: "/placeholder.png", type: "Programming Languages" },
-    { name: "Java", icon: "/placeholder.png", type: "Programming Languages" },
-    { name: "C", icon: "/placeholder.png", type: "Programming Languages" },
-    { name: "TypeScript", icon: "/placeholder.png", type: "Programming Languages" },
-    { name: "JavaScript", icon: "/placeholder.png", type: "Programming Languages" },
-    { name: "HTML", icon: "/placeholder.png", type: "Programming Languages" },
-    { name: "CSS", icon: "/placeholder.png", type: "Programming Languages" },
-    { name: "SQL", icon: "/placeholder.png", type: "Programming Languages" },
+    // Icons from: https://techicons.dev/
+    { name: "Python", icon: "/images/tech-icons/Python.svg", type: "Programming Languages" },
+    { name: "Java", icon: "/images/tech-icons/Java.svg", type: "Programming Languages" },
+    { name: "C", icon: "/images/tech-icons/C.svg", type: "Programming Languages" },
+    { name: "TypeScript", icon: "/images/tech-icons/TypeScript.svg", type: "Programming Languages" },
+    { name: "JavaScript", icon: "/images/tech-icons/JavaScript.svg", type: "Programming Languages" },
+    { name: "HTML", icon: "/images/tech-icons/HTML5.svg", type: "Programming Languages" },
+    { name: "CSS", icon: "/images/tech-icons/CSS3.svg", type: "Programming Languages" },
     
     // Frameworks/Libraries - Frontend
-    { name: "React", icon: "/placeholder.png", type: "Frameworks/Libraries", category: "Frontend" },
-    { name: "Next.js", icon: "/placeholder.png", type: "Frameworks/Libraries", category: "Frontend" },
-    { name: "Tailwind CSS", icon: "/placeholder.png", type: "Frameworks/Libraries", category: "Frontend" },
+    { name: "React", icon: "/images/tech-icons/React.svg", type: "Frameworks/Libraries", category: "Frontend" },
+    { name: "Next.js", icon: "/images/tech-icons/Next.js.svg", type: "Frameworks/Libraries", category: "Frontend" },
+    { name: "Tailwind CSS", icon: "/images/tech-icons/Tailwind CSS.svg", type: "Frameworks/Libraries", category: "Frontend" },
     
     // Frameworks/Libraries - Backend
-    { name: "Node.js", icon: "/placeholder.png", type: "Frameworks/Libraries", category: "Backend" },
-    { name: "Flask", icon: "/placeholder.png", type: "Frameworks/Libraries", category: "Backend" },
-    { name: "FastAPI", icon: "/placeholder.png", type: "Frameworks/Libraries", category: "Backend" },
+    { name: "Node.js", icon: "/images/tech-icons/Node.js.svg", type: "Frameworks/Libraries", category: "Backend" },
+    { name: "Flask", icon: "/images/tech-icons/Flask.svg", type: "Frameworks/Libraries", category: "Backend" },
+    { name: "FastAPI", icon: "/images/tech-icons/FastAPI.svg", type: "Frameworks/Libraries", category: "Backend" },
     
     // Frameworks/Libraries - Data Science
-    { name: "NumPy", icon: "/placeholder.png", type: "Frameworks/Libraries", category: "Data Science / Computer Vision" },
-    { name: "pandas", icon: "/placeholder.png", type: "Frameworks/Libraries", category: "Data Science / Computer Vision" },
-    { name: "Matplotlib", icon: "/placeholder.png", type: "Frameworks/Libraries", category: "Data Science / Computer Vision" },
-    { name: "YOLOv8", icon: "/placeholder.png", type: "Frameworks/Libraries", category: "Data Science / Computer Vision" },
-    { name: "SAM 3", icon: "/placeholder.png", type: "Frameworks/Libraries", category: "Data Science / Computer Vision" },
-    { name: "COCO", icon: "/placeholder.png", type: "Frameworks/Libraries", category: "Data Science / Computer Vision" },
+    { name: "NumPy", icon: "/images/tech-icons/NumPy.svg", type: "Frameworks/Libraries", category: "Data Science / Computer Vision" },
+    { name: "pandas", icon: "/images/tech-icons/Pandas.svg", type: "Frameworks/Libraries", category: "Data Science / Computer Vision" },
+    { name: "Matplotlib", icon: "/images/tech-icons/Matplotlib.svg", type: "Frameworks/Libraries", category: "Data Science / Computer Vision" },
+    { name: "YOLOv8", icon: "/images/tech-icons/YOLOV8.svg", type: "Frameworks/Libraries", category: "Data Science / Computer Vision" },
+    { name: "SAM 3", icon: "/images/tech-icons/SAM3.svg", type: "Frameworks/Libraries", category: "Data Science / Computer Vision" },
+    { name: "COCO", icon: "/images/tech-icons/COCO.png", type: "Frameworks/Libraries", category: "Data Science / Computer Vision" },
+    { name: "Jupyter", icon: "/images/tech-icons/Jupyter.svg", type: "Frameworks/Libraries", category: "Data Science / Computer Vision" },
+    { name: "Marimo", icon: "/images/tech-icons/Marimo.svg", type: "Frameworks/Libraries", category: "Data Science / Computer Vision" },
     
     // Developer Tools - DevOps
-    { name: "Git", icon: "/placeholder.png", type: "Developer Tools", category: "DevOps" },
-    { name: "GitHub", icon: "/placeholder.png", type: "Developer Tools", category: "DevOps" },
-    { name: "Docker", icon: "/placeholder.png", type: "Developer Tools", category: "DevOps" },
+    { name: "Git", icon: "/images/tech-icons/Git.svg", type: "Developer Tools", category: "DevOps" },
+    { name: "GitLab", icon: "/images/tech-icons/GitLab.svg", type: "Developer Tools", category: "DevOps" },
+    { name: "GitHub", icon: "/images/tech-icons/GitHub.svg", type: "Developer Tools", category: "DevOps" },
+    { name: "Docker", icon: "/images/tech-icons/Docker.svg", type: "Developer Tools", category: "DevOps" },
 
     // Developer Tools - Database
-    { name: "MongoDB", icon: "/placeholder.png", type: "Developer Tools", category: "Database" },
+    { name: "PostgreSQL", icon: "/images/tech-icons/PostgreSQL.svg", type: "Developer Tools", category: "Database" },
+    { name: "SQLite", icon: "/images/tech-icons/SQLite.svg", type: "Developer Tools", category: "Database" },
+    { name: "MongoDB", icon: "/images/tech-icons/MongoDB.svg", type: "Developer Tools", category: "Database" },
     
     // Developer Tools - Cloud
-    { name: "Google ADK", icon: "/placeholder.png", type: "Developer Tools", category: "Cloud" },
-    { name: "Vercel", icon: "/placeholder.png", type: "Developer Tools", category: "Cloud" },
+    { name: "Google ADK", icon: "/images/tech-icons/Google ADK.svg", type: "Developer Tools", category: "Cloud" },
+    { name: "Vercel", icon: "/images/tech-icons/Vercel.svg", type: "Developer Tools", category: "Cloud" },
     
     // Developer Tools - Development
-    { name: "Linux", icon: "/placeholder.png", type: "Developer Tools", category: "Development" },
-    { name: "Windows", icon: "/placeholder.png", type: "Developer Tools", category: "Development" },
-    { name: "VS Code", icon: "/placeholder.png", type: "Developer Tools", category: "Development" },
-    { name: "IntelliJ", icon: "/placeholder.png", type: "Developer Tools", category: "Development" },
-    { name: "PyCharm", icon: "/placeholder.png", type: "Developer Tools", category: "Development" },
-    { name: "Jupyter", icon: "/placeholder.png", type: "Developer Tools", category: "Development" },
-    { name: "Marimo", icon: "/placeholder.png", type: "Developer Tools", category: "Development" },
+    { name: "Linux", icon: "/images/tech-icons/Linux.svg", type: "Developer Tools", category: "Development" },
+    { name: "Windows", icon: "/images/tech-icons/Windows.svg", type: "Developer Tools", category: "Development" },
+    { name: "VS Code", icon: "/images/tech-icons/VS Code.svg", type: "Developer Tools", category: "Development" },
+    { name: "IntelliJ", icon: "/images/tech-icons/IntelliJ IDEA.svg", type: "Developer Tools", category: "Development" },
+
 
   ],
   social: {
