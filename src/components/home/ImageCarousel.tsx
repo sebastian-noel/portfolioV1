@@ -25,6 +25,7 @@ export default function ImageCarousel() {
   );
 
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [isExpandedImageLoading, setIsExpandedImageLoading] = useState(false);
   const activeSlide = activeIndex !== null ? slides[activeIndex] : null;
 
   const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
@@ -32,11 +33,13 @@ export default function ImageCarousel() {
 
   const openSlide = useCallback((idx: number) => {
     autoplay.current?.stop?.();
+    setIsExpandedImageLoading(true);
     setActiveIndex(idx);
   }, []);
 
   const closeSlide = useCallback(() => {
     setActiveIndex(null);
+    setIsExpandedImageLoading(false);
     autoplay.current?.reset?.();
   }, []);
 
@@ -115,13 +118,23 @@ export default function ImageCarousel() {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="relative w-full aspect-4/3 overflow-hidden rounded-2xl shadow-2xl">
+                {isExpandedImageLoading ? (
+                  <div className="absolute inset-0 z-10 flex items-center justify-center bg-black/25">
+                    <div
+                      className="h-8 w-8 animate-spin rounded-full border-2 border-white/40 border-t-white"
+                      role="status"
+                      aria-label="Loading image"
+                    />
+                  </div>
+                ) : null}
                 <Image
                   src={activeSlide.src}
                   alt={activeSlide.alt}
                   fill
-                  className="object-cover"
+                  className={`object-cover transition-opacity duration-300 ${isExpandedImageLoading ? 'opacity-0' : 'opacity-100'}`}
                   sizes="100vw"
                   priority
+                  onLoadingComplete={() => setIsExpandedImageLoading(false)}
                 />
               </div>
               {activeSlide.description ? (
