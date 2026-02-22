@@ -2,7 +2,7 @@ import { type Experience } from "@/types";
 
 export const experiences: Experience[] = [
   {
-    company: "BNY (Bank of New York Mellon)",
+    company: "Bank of New York (BNY)",
     role: "Software Engineer Intern",
     start: "January 2026",
     end: "Present",
@@ -28,7 +28,7 @@ export const experiences: Experience[] = [
     },
   },
   {
-    company: "Center for Research in Computer Vision",
+    company: "Center for Research in Computer Vision (CRCV)",
     role: "Undergraduate Computer Vision Researcher",
     start: "January 2026",
     end: "Present",
@@ -113,7 +113,7 @@ export const experiences: Experience[] = [
     },
   },
   {
-    company: "Data-Enabled Photovoltaics",
+    company: "Florida Solar Energy Center (FSEC)",
     role: "Software Engineer Intern",
     start: "June 2024",
     end: "August 2024",
@@ -128,17 +128,17 @@ export const experiences: Experience[] = [
       "Architected a foundational Python package by refactoring 14 scripts to accelerate future research and development",
     ],
     technologies: ["Python", "NumPy", "Pandas", "PyTorch", "Marimo Notebook", "LSTM", "MLP", "Deep Learning", "Computer Vision"],
-    logo: "/images/experience/dpv-logo.png",
+    logo: "/images/experience/fsec-logo.svg",
     links: [
       { label: "Research Program", url: "https://ucf-dpv.notion.site/DARTS-2025-2498d52e715180b18c7fd1065e655faf?p=2498d52e7151801d89c8f4d5ea1a9ac7&pm=c" },
     ],
     media: [
-      { type: "image", src: "/images/experience/dpv-team.jpg", alt: "DPV DARTS Showcase" },
+      { type: "image", src: "/images/experience/fsec-team.jpg", alt: "FSEC Team Photo" },
     ],
     colorScheme: {
-      primary: "#F9C710",
-      secondary: "#1A1A1A",
-      techBg: "#F9C71026", // Primary w/ 15% opacity
+      primary: "#F3C300",
+      secondary: "#231F20",
+      techBg: "#F3C30026", // Primary w/ 15% opacity
     },
   },
 ];
