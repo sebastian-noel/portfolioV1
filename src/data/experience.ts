@@ -10,7 +10,10 @@ export const experiences: Experience[] = [
     description:
       "Developing an Infrastructure Digital Engineer, an AI agent based system tailored to automate monitoring, issue detection, and resolution for financial microservices. Engineering the solution using Java, Spring Boot, and PostgreSQL within a Dockerized architecture, while integrating Prometheus, Grafana, and AppDynamics for full-stack observability.",
     achievements: [
-      "Working on semester long app development project with Kai Sprunger, Carlos Catala, and Nicole Bustos",
+      "Engineered an AI agent-based Infrastructure Digital Engineer to automate monitoring, issue detection, and resolution",
+      "Developed the backend with Java, Spring Boot, and PostgreSQL to support 5 Dockerized financial microservices",
+      "Automated issue detection workflows by utilizing 6+ infrastructure and service health signals for 40% faster remediation",
+      "Integrated telemetry from Prometheus, Grafana, and AppDynamics to deliver real-time full-stack observability"
     ],
     technologies: ["Java", "Spring Boot", "PostgreSQL", "Docker", "Prometheus", "Grafana", "AppDynamics", "GitLab", "Agile", "Jira"],
     logo: "/images/experience/bny-logo.png",
@@ -36,7 +39,10 @@ export const experiences: Experience[] = [
     description:
       "Working with the Meta Superintelligence Lab's SAM 3 computer vision model to build a novel dynamic memory buffer for long-term video understanding.",
     achievements: [
-      "Spring 2026 Undergraduate Computer Vision Researcher under Dr. Yogesh S Rawat",
+      "Co-authored an EECV paper (in progress) on a Frame Forgetting Network for Test-Time Training, improving long-form video segmentation efficiency by eliminating redundant sliding-window computations",
+      "Benchmarked SAM 3 on 47 long-form videos using the UCF CRCV cluster, analyzing datasets up to 4 hours in length",
+      "Built Python and PyTorch pipelines in Anaconda, using Bash scripting to process COCO and RLE data formats",
+      "Optimized real-time adaptation with an adaptive window mechanism, cutting computation costs to just 2 frames per update",
     ],
     technologies: ["Python", "PyTorch", "SAM 3", "COCO", "Anaconda", "Bash", "HPC", "Technical Writing", "Video Segmentation", "Dynamic Memory",],
     logo: "/images/experience/crcv-logo.jpg",
@@ -96,6 +102,8 @@ export const experiences: Experience[] = [
       "Coordinated Render Jam event logistics and management for over 40 participants, culminating in 5 completed projects",
       "Drove membership growth by 35+ through strategic promotion at Opening Knight and the Knight Hacks RSO Fair",
       "Established a centralized Notion workspace for 6 officers to streamline event planning and operations by 50%",
+      "Led a team of 3 developers to engineer the organization’s website with Next.js and TypeScript, reducing deployment times by 25% through Docker containerization and integrating a GitHub Actions CI/CD pipeline",
+      "Improved media load times by 30% by implementing Amazon CloudFront to cache high-resolution S3 assets",
     ],
     technologies: ["OpenGL", "Vulkan", "C++", "Game Development"],
     logo: "/images/experience/gpk-logo.png",
